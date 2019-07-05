@@ -7,7 +7,6 @@ body {
     margin: 30px;
 }
 
-
 .btn-publish {
     float: right;
     margin-bottom: 15px;
@@ -22,4 +21,8 @@ body {
     font-size: 12px;
     font-weight: normal;
     color: #999;
+}
+
+.profile .section {
+    margin-top: 15px;
 }
