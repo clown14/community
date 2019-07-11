@@ -11,11 +11,19 @@ function post() {
             "content":content,
             "type":1
         }),
-        success: function (reponse) {
+        success: function (response) {
             if (response.code == 200) {
                 $("#comment_section").hide();
             } else {
-                alert(response.message);
+                if (response.code == 2003) {
+                    var isAccepted = confirm(response.message);
+                    if (isAccepted) {
+                        window.open("https://github.com/login/oauth/authorize?client_id=49131f5ae4ab9b9244d1&redirect_uri=http://localhost:8887/callback&scope=user&state=1");
+                        window.localStorage.setItem("closable",true);
+                    }
+                }else{
+                    alert(response.message);
+                }
             }
             console.log(response);
         },
