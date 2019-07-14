@@ -58,7 +58,11 @@
                             <div th:text="${comment.content}">我是回复内容</div>
                             <div class="menu">
                                 <span class="glyphicon glyphicon-thumbs-up icon"></span>
-                                <span class="glyphicon glyphicon-comment icon" th:data-id="${comment.id}" onclick="collapseComments(this)"></span>
+                                <span th:data-id="${comment.id}"
+                                      onclick="collapseComments(this)" class="comment-icon">
+                                    <span class="glyphicon glyphicon-comment"></span>
+                                    <span th:text="${comment.commentCount}"></span>
+                                </span>
                                 <span class="pull-right"
                                       th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd')}"></span>
                             </div>
