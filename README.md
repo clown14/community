@@ -11,6 +11,7 @@
 [Sping MVC](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)  
 [jQuery](https://api.jquery.com/jQuery.post/)  
 [Markdown](https://pandao.github.io/editor.md/index.html)
+[UFfile SDK](https://github.com/ucloud/ufile-sdk-java)  
 
 ## 工具
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
