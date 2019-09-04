@@ -1,0 +1,23 @@
+2019-09-04 18:50:07.632 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-09-04 18:50:07.636 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 1(Long)
+2019-09-04 18:50:07.638 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-09-04 18:50:07.639 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-09-04 18:50:07.639 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 1(Long)
+2019-09-04 18:50:07.640 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-09-04 18:50:07.641 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-09-04 18:50:07.641 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 1(Long)
+2019-09-04 18:50:07.642 DEBUG 20128 --- [http-nio-8887-exec-5] l.m.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-09-04 18:50:16.731  INFO 28512 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on DESKTOP-FP1NH5E with PID 28512 (E:\Code\community\target\classes started by onion in E:\Code\community)
+2019-09-04 18:50:16.733  INFO 28512 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-09-04 18:50:16.773  INFO 28512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-04 18:50:16.773  INFO 28512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-04 18:50:17.998  INFO 28512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-09-04 18:50:18.020  INFO 28512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-04 18:50:18.021  INFO 28512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-09-04 18:50:18.146  INFO 28512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-04 18:50:18.146  INFO 28512 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
+2019-09-04 18:50:18.746  INFO 28512 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-04 18:50:18.862  INFO 28512 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-04 18:50:19.032  INFO 28512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-04 18:50:19.079  INFO 28512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-09-04 18:50:19.082  INFO 28512 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 2.703 seconds (JVM running for 3.76)
