@@ -95,6 +95,7 @@
                             <!--二级评论-->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse sub-comments"
                                  th:id="${'comment-'+comment.id}">
+                                <!--根据comment-id 拼接请求到的二级评论-->
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" class="form-control" placeholder="评论一下……"
                                            th:id="${'input-'+comment.id}">

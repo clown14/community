@@ -14,6 +14,7 @@ import java.io.IOException;
  * @create: 2019-06-23 13:11
  **/
 
+//初始化当前类到spring容器上下文（Autowired ioc)
 @Component
 public class GithubProvider {
 

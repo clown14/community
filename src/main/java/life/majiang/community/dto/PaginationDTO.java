@@ -18,7 +18,9 @@ public class PaginationDTO<T> {
     private boolean showNext;
     private boolean showEndPage;
 
+    //当前页
     private Integer page;
+    //显示页列表
     private List<Integer> pages = new ArrayList<>();
     private Integer totalPage;
 

@@ -54,6 +54,7 @@ public class QuestionService {
 
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
 
+        //一共几页（最后一页）
         if (totalCount % size == 0) {
             totalPage = totalCount / size;
         } else {
@@ -69,13 +70,9 @@ public class QuestionService {
             page = totalPage;
         }
 
-        if (page < 1) {
-            page = 1;
-        }
-
         paginationDTO.setPagination(totalPage, page);
 
-        //size*(page-1)
+        //size*(page-1) 当前页第一个要查的问题 limit中的第一个参数
         Integer offset = size * (page - 1);
 
         questionQueryDTO.setSize(size);
@@ -186,6 +183,7 @@ public class QuestionService {
 
     }
 
+    //相关问题
     public List<QuestionDTO> selectRelated(QuestionDTO queryDTO) {
         if (StringUtils.isBlank(queryDTO.getTag())) {
             return new ArrayList<>();

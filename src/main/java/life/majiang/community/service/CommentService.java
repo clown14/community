@@ -70,7 +70,7 @@ public class CommentService {
 
             commentMapper.insert(comment);
 
-            // 增加评论数
+            // 增加二级评论数
             Comment parentComment = new Comment();
             parentComment.setId(comment.getParentId());
             parentComment.setCommentCount(1);
@@ -84,6 +84,8 @@ public class CommentService {
             if (question == null) {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
+
+            //增加一级评论数
             comment.setCommentCount(0);
             commentMapper.insert(comment);
             question.setCommentCount(1);

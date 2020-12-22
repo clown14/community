@@ -66,6 +66,7 @@ function collapseComments(e) {
         e.classList.remove("active");
     } else {
         var subCommentContainer = $("#comment-" + id);
+        //避免重复显示
         if (subCommentContainer.children().length != 1) {
             //展开二级评论
             comments.addClass("in");

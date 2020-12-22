@@ -33,7 +33,8 @@ public class PublishController {
                        Model model) {
         QuestionDTO question = questionService.getById(id);
         model.addAttribute("title", question.getTitle());
-        model.addAttribute("description", question.getDescription());model.addAttribute("tag", question.getTag());
+        model.addAttribute("description", question.getDescription());
+        model.addAttribute("tag", question.getTag());
         model.addAttribute("id", question.getId());
         model.addAttribute("tags", TagCache.get());
 
@@ -47,10 +48,10 @@ public class PublishController {
     }
 
     @PostMapping("/publish")
-    public String doPublish(@RequestParam(value = "title",required = false) String title,
-                            @RequestParam(value = "description",required = false) String description,
-                            @RequestParam(value = "tag",required = false) String tag,
-                            @RequestParam(value = "id",required = false) Long id,
+    public String doPublish(@RequestParam(value = "title", required = false) String title,
+                            @RequestParam(value = "description", required = false) String description,
+                            @RequestParam(value = "tag", required = false) String tag,
+                            @RequestParam(value = "id", required = false) Long id,
                             HttpServletRequest request,
                             Model model) {
         model.addAttribute("title", title);
